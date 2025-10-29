@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>P2P Camera Viewer — Controls</title>
+</head>
+<body>
+  <h2>📹 P2P Camera Viewer — Controls</h2>
+
+  <video id="remoteVideo" autoplay playsinline controls style="width:640px;height:360px;background:#000"></video>
+
+  <div style="margin-top:12px;">
+    <button id="ptzLeft">PTZ ◀</button>
+    <button id="ptzRight">PTZ ▶</button>
+    <button id="ptzUp">PTZ ▲</button>
+    <button id="ptzDown">PTZ ▼</button>
+  </div>
+
+  <div style="margin-top:8px;">
+    <input id="playbackPath" placeholder="MP4 path on camera machine (e.g. /home/user/video.mp4)" style="width:420px"/>
+    <button id="playbackStart">Start Playback (camera)</button>
+    <button id="playbackStop">Stop Playback</button>
+  </div>
+
+  <div style="margin-top:8px;">
+    <input id="recName" placeholder="record_output.mp4" />
+    <button id="recStart">Start Recording (camera)</button>
+    <button id="recStop">Stop Recording</button>
+  </div>
+
+  <script src="client.js"></script>
+</body>
+</html>
